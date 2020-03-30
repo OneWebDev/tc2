@@ -1,0 +1,121 @@
+[v-cloak] { display: none; }
+
+body {
+    background-color: #f3f6f4
+}
+
+#app > div {
+    display: inline-block;
+    min-height: 100vh;
+    vertical-align: top
+}
+.left-side-bar {
+    width: 220px;
+    max-height: 100vh;
+    position: fixed;
+    background-color: white!important;
+    overflow-y: scroll;
+}
+
+.left-side-bar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.left-side-bar::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.left-side-bar::-webkit-scrollbar-thumb
+{
+	background-color: #65d6bb;
+	border: 2px solid #65d6bb;
+}
+
+.tab-list-side-bar {
+    width: calc(100vw - 220px - 750px - 50px);
+    background-color: white!important;
+}
+.main-page {
+    margin-left: 220px;
+    background-color: #f3f6f4;
+    width: 750px;
+}
+
+@media only screen and (max-width: 1690px) {
+    .tab-list-side-bar {
+        width: calc(100vw - 220px - 750px - 50px + 150px + 50px);
+        background-color: white!important;
+    }
+    .main-page {
+        width: 550px;
+    }
+    .larger-number-icon{
+        margin-left: 370px!important;
+    }
+}
+
+.active-card {
+    background-color: #d7f6e5;
+    border: 2px solid #d7f6e5;
+}
+.not-active-card {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.not-active-card:hover {
+    background-color: whitesmoke;
+}
+
+.rounded-extra {
+    border-radius: 1.5rem!important;
+}
+
+.dark-active-card {
+    background-color: #65d6bb;
+}
+
+.special-read-button {
+    color: #676767; 
+    background-color: #e7e7e7;
+}
+.dark-active-tab {
+    background-color: #65d6bb;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    line-height: 110%;
+}
+.tab-bar > div {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.dark-not-active-tab:hover {
+    border: 1px solid #65d6bb;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+}
+.dark-not-active-tab {
+    line-height: 110%;
+}
+
+
+.rounded-extra {
+    border-radius: 1.5rem!important;
+}
+
+.larger-number-icon {
+    font-size: 5rem; 
+    background-color: #65d6bb; 
+    width: 152px; 
+    border-radius: 1rem;
+    float: left;
+}
+
+.text-5xl.font-bold.tracking-wide {
+    line-height: 110%;
+}
